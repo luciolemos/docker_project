@@ -37,6 +37,8 @@ Este `docker_project` está localizado no seguinte caminho:
 #### Navegue até o diretório raiz do projeto `app` e crie a imagem do contêiner usando o `docker build`. Este comando usou o Dockerfile para construir uma nova imagem de contêiner. 
     luciolemos@dev:~/my_docker_projects/app$ docker build -t getting-started .
 ### Manipulando contêineres
+#### Inicie seu contêiner usando `docker run` e especifique o nome da imagem criada:
+    luciolemos@dev:~/my_docker_projects/app$ docker run -dp 3000:3000 getting-started
 #### Para visualizar os contêineres ativos, use `docker ps`:
     luciolemos@dev:~$ docker ps
 #### Para visualizar todos os contêineres ativos e inativos, execute `docker ps` com a flag `-a`:
